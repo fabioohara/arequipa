@@ -19,6 +19,13 @@ import EstudioAyuda from "./componentes/EstudioAyuda";
 import Mision from "./componentes/Mision";
 import Expertos from "./componentes/Expertos";
 import BannerExpertos from "./componentes/BannerExpertos";
+import Valores from "./componentes/Valores";
+import BannerMini2 from "./componentes/BannerMini2";
+import Especialistas from "./componentes/Especialistas";
+import Card4 from "./componentes/Card4";
+import BannerAbogados from "./componentes/BannerAbogados";
+import AbogadosAyuda from "./componentes/AbogadosAyuda";
+import Abogados from "./componentes/Abogados";
 
 function App() {
   return (
@@ -53,6 +60,19 @@ function App() {
              <Mision/>
              <Expertos/>
             <BannerExpertos/>
+            <Valores/>
+            <BannerMini2/>
+            <Especialistas/>
+            <Card4/>
+            </>
+          } />
+
+            {/* Nueva ruta que muestra un nuevo componente */}
+        <Route path="/abogados" element={
+            <>
+              <BannerAbogados />
+              <AbogadosAyuda/>
+              <Abogados/>
             </>
           } />
       </Routes>
@@ -67,8 +87,8 @@ function App() {
         className="whatsapp-icon"
         style={{
           position: "fixed",
-          bottom: "70px",
-          right: "70px",
+          bottom: "15px",
+          right: "20px",
           zIndex: "2000",
         }}
       >

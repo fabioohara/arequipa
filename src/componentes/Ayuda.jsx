@@ -5,6 +5,9 @@ const Ayuda = () => {
     { id: 1, name: 'Derecho Penal',type: 'areas1' },
     { id: 2, name: 'Derecho Inmobiliario', type: 'areas2' },
     { id: 3, name: 'Derecho Laboral', type: 'areas3' },
+    { id: 4, name: 'Derecho Corporativo',type: 'areas1' },
+    { id: 5, name: 'Derecho Familiar', type: 'areas2' },
+    { id: 6, name: 'Cobranzas y Controversias', type: 'areas3' },
   
   ];
 

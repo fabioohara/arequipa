@@ -1,47 +1,42 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import estudio from "../assets/estudio.jpg";
-
-import slide01movil from "../assets/slide01-movil.jpg";
+import abogados from "../assets/lawyers.jpg";
+import abogadosmini from "../assets/lawyersmini.jpg";
 
 
 const slidesDesktop = [
   {
     id: 1,
-    image: estudio,
-    title: "El Estudio",
-    description:
-      "En Senisse Abogados estamos comprometidos en brindar soluciones legales efectivas para salvaguardar tus intereses.",
+    image: abogados,
+    title: "Nuestros Abogados",
+   
   },
   {
     id: 2,
-    image: estudio,
-    title: "El Estudio",
-    description:
-    "En Senisse Abogados estamos comprometidos en brindar soluciones legales efectivas para salvaguardar tus intereses.",
+    image: abogados,
+    title: "Nuestros Abogados",
+   
 },
 ];
 
 const slidesMobile = [
   {
     id: 1,
-    image: estudio,
-    title: "El Estudio",
-    description:
-    "En Senisse Abogados estamos comprometidos en brindar soluciones legales efectivas para salvaguardar tus intereses.",
+    image: abogadosmini,
+    title: "Nuestros Abogados",
+    
 },
   {
     id: 2,
-    image: estudio,
-    title: "El Estudio",
-    description:
-    "En Senisse Abogados estamos comprometidos en brindar soluciones legales efectivas para salvaguardar tus intereses.",
+    image: abogadosmini,
+    title: "Nuestros Abogados",
+   
 },
 ];
 
-const BannerEstudio = () => {
+const BannerAbogados = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
@@ -81,7 +76,7 @@ const BannerEstudio = () => {
                 />
                 <div className="mobile-shadow-estudio">
                   <h1>{slide.title}</h1>
-                  <p>{slide.description}</p>
+                
                  
                 </div>
               </div>
@@ -95,7 +90,7 @@ const BannerEstudio = () => {
               <div className="slide-content">
                 <div className="shadow-estudio">
                   <h1>{slide.title}</h1>
-                  <p>{slide.description}</p>
+                 
                 
                 </div>
                 <img
@@ -112,4 +107,4 @@ const BannerEstudio = () => {
   );
 };
 
-export default BannerEstudio;
+export default BannerAbogados;

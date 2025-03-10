@@ -7,7 +7,7 @@ const Agenda = () => {
    
     <div class="text-contentC">
       <h1>Agenda una consulta</h1>
-      <p class="p-no-margin">a partir de S/.249*</p>
+      <p class="p-no-margin">a partir de S/.149*</p>
       <div className="button2">
             Agendar una consulta {'>'}
           </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/logosa.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <div className="header">
-      <img src={logo} alt="Logo" width={200} className="logo" />
+      <img src={logo} alt="Logo"  className="logo" />
 
       {/* Botón de hamburguesa para dispositivos móviles */}
       <button 
