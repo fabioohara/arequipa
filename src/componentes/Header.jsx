@@ -50,12 +50,12 @@ const Header = () => {
               ÁREAS DE PRÁCTICAS &nbsp; <span className='rotated-text-align'>{' >'}</span>
             </a>
             <ul className="dropdown-menu">
-              <li><a href="/penal">DERECHO PENAL</a></li>
-              <li><a href="/inmobiliario">DERECHO INMOBILIARIO</a></li>
-              <li><a href="/laboral">DERECHO LABORAL</a></li>
-              <li><a href="/corporativo">DERECHO CORPORATIVO</a></li>
-              <li><a href="/familia">DERECHO DE FAMILIA</a></li>
-              <li><a href="/cobranzas">COBRANZAS Y CONTROVERSIAS</a></li>
+              <li><a href="/areas/1">DERECHO PENAL</a></li>
+              <li><a href="/areas/2">DERECHO INMOBILIARIO</a></li>
+              <li><a href="/areas/3">DERECHO LABORAL</a></li>
+              <li><a href="/areas/4">DERECHO CORPORATIVO</a></li>
+              <li><a href="/areas/5">DERECHO DE FAMILIA</a></li>
+              <li><a href="/areas/6">COBRANZAS Y CONTROVERSIAS</a></li>
             </ul>
           </li>
           <li><a href="/publicaciones">PUBLICACIONES</a></li>

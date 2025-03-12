@@ -26,6 +26,7 @@ import Card4 from "./componentes/Card4";
 import BannerAbogados from "./componentes/BannerAbogados";
 import AbogadosAyuda from "./componentes/AbogadosAyuda";
 import Abogados from "./componentes/Abogados";
+import Area from "./componentes/Area";
 
 function App() {
   return (
@@ -75,6 +76,10 @@ function App() {
               <Abogados/>
             </>
           } />
+
+<Route path="/areas/:id" element={<Area />} />
+
+
       </Routes>
 
       <Footer />
