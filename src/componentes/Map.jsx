@@ -24,12 +24,11 @@ const Map = () => {
       <h1>Visítanos</h1>
    
       <p>
-      En nuesta oficina de Miraflores
-      </p>
+      En nuesta oficina de Yanahuara, Arequipa - Perú      </p>
     
      
       <p className='p-movil'>
-      En nuesta oficina de Miraflores, Lima - Perú
+      En nuesta oficina de Yanahuara, Arequipa - Perú
       </p>
       <div className='map-movil'>
       <i className="fa fa-map-marker" style={{color:'#d52c31', fontSize:'3rem'}}></i>

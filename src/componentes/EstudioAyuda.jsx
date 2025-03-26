@@ -7,7 +7,8 @@ const EstudioAyuda = () => {
       <h2 className='estudio-h2'>Nuestra historia, tu tranquilidad</h2>
       <hr className='hr'/>
       <p>
-Somos un estudio prestigioso que desde nuestros inicios hemos trabajado de manera constante para ofrecer soluciones legales integrales priorizando la tranquilidad y seguridad de nuestros clientes. Con bases sólidas en el compromiso y la profesionalidad, hemos logrado convertirnos en referentes en el campo legal en Perú.
+      Somos un estudio de abogados prestigioso adscrito al Grupo Senisse, creador de Senisse Abogados en la ciudad de Lima y ahora en Arequipa como Senisse, Alvarez Garcia Abogados. 
+      Estamos comprometidos en extender nuestra misión de defender y asesorar a personas y empresas que buscan sacar adelante nuestro país. Con bases sólidas en el compromiso y la profesionalidad hemos logrado convertirnos en estudio de abogados referente en la asesoría legal y queremos llegar a cada ciudad de nuestro Perú.
 </p>
         </div>
   );

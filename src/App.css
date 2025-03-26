@@ -14,4 +14,7 @@
   color: #888;
 }
 
-
+.link {
+color:white !important;
+text-decoration: none;
+}

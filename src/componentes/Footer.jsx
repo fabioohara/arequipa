@@ -15,8 +15,8 @@ const Footer = () => {
 
   <ul className="menuFooter" >
     <li><i className="fa fa-phone"></i>&nbsp; 905452024</li>
-    <li><i className="fa fa-facebook"></i>&nbsp; Senisse Abogados</li>
-    <li><i className="fa fa-map-marker"></i>&nbsp; Avenida Reducto 861, Of. 303, Miraflores</li>
+    <li><i className="fa fa-facebook"></i>&nbsp; Senisse, Alvarez Garcia Abogados</li>
+    <li><i className="fa fa-map-marker"></i>&nbsp; Av. Ejercito 101 Of. 506 - Arequipa</li>
    
   </ul>
     

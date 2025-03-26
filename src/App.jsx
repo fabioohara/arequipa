@@ -41,8 +41,9 @@ function App() {
             <>
               <Banner />
               <Ayuda />
-              <Card1 />
               <BannerMini />
+              <Card1 />
+            
               <Card2 />
               <Card3 />
               <Resolucion />

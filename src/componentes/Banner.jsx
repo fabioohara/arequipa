@@ -13,7 +13,7 @@ const slidesDesktop = [
     image: slide01,
     title: "Profesionales a tu Servicio",
     description:
-      "Tu caso es importante para nosotros, y nos comprometemos a dedicarle el tiempo y la atención necesarios.",
+      "Defendemos lo que mas valoras ahora en Arequipa. Contamos con 25 años experiencia y resultados sólidos en Lima, ahora en Arequipa y todo el Perú.",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const slidesMobile = [
     image: slide01movil,
     title: "Profesionales a tu Servicio",
     description:
-      "Tu caso es importante para nosotros, y nos comprometemos a dedicarle el tiempo y la atención necesarios.",
+    "Defendemos lo que mas valoras ahora en Arequipa. Contamos con 25 años experiencia y resultados sólidos en Lima, ahora en Arequipa y todo el Perú.",
   },
   {
     id: 2,

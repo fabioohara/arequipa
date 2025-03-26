@@ -629,10 +629,10 @@ h1 {
 }
 
 .banner-mini-img {
-  width: 120px; /* Ajusta el tamaño de la imagen */
+  width: 250px; /* Ajusta el tamaño de la imagen */
   height: 120px;
-  border-radius: 50%; /* Hace la imagen circular */
-  object-fit: cover;
+  border-radius: 5%; /* Hace la imagen circular */
+  object-fit:contain;
   margin-top: 1rem;
 }
 
