@@ -6,7 +6,7 @@ import Accordion from './Accordion'
 
 const Dudas = () => {
   return (
-    <div class="container-transparent">
+    <div className="container-transparent">
    
       <h2>Resolvemos tus dudas</h2>
       <p>

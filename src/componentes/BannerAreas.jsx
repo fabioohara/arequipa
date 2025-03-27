@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import {getData} from "../services/index"
 
 
-const BannerAreas = () => {
+const BannerAreas = ({ setMostrarContacto }) => {
     const { id } = useParams();
     const [datos, setDatos] = useState([]);
 
@@ -76,7 +76,7 @@ const BannerAreas = () => {
                 <div className="mobile-shadow-estudio">
                   <h1>{dato.titulo}</h1>
                   <p>{dato.texto}</p> 
-                  <div className="button4">
+                  <div className="button4" onClick={() => setMostrarContacto(true)}>
             Agendar una consulta {'>'}
           </div>
                 </div>
@@ -97,7 +97,7 @@ const BannerAreas = () => {
                  <div className="shadow-estudio-areas">
                   <h1>{dato.titulo}</h1>
                     <p>{dato.texto}</p>  
-                    <div className="button4">
+                    <div className="button4" onClick={() => setMostrarContacto(true)}>
             Agendar una consulta {'>'}
           </div>          
                 </div>

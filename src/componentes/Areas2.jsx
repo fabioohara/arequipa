@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams,Link } from "react-router-dom";
 import { getData } from "../services/index";
 
 const Areas2 = () => {
@@ -53,7 +53,9 @@ const Areas2 = () => {
               <h2 >{dato.nombre}</h2> 
               <h3  >{dato.cargo}</h3> 
               <p  >{dato.bio}</p> 
+              <Link to={`/abogado/${dato.id}`} style={{textDecoration:"none"}}>
               <div className="button5">Leer Más {'>'}</div>
+              </Link>
               </div>
              </div>
             ))}

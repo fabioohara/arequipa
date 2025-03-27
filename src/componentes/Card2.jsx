@@ -3,9 +3,9 @@ import card2 from '../assets/card2.jpg'
 
 const Card2 = () => {
   return (
-    <div class="container3">
+    <div className="container3">
    <div className='movil-reverse'>
-    <div class="text-contentR">
+    <div className="text-contentR">
       <h1>Tu tranquilidad es nuestra prioridad</h1>
       <hr className='hrR' />
       <div className='div-image2'> <img className="right-image" src={card2} alt="Descripción de la imagen" /></div>

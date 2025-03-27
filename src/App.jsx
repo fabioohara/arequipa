@@ -1,3 +1,5 @@
+import React, { useState, useEffect, useRef } from "react";
+
 import { Routes, Route } from "react-router-dom";
 import Header from "./componentes/Header";
 import Banner from "./componentes/Banner";
@@ -27,27 +29,31 @@ import BannerAbogados from "./componentes/BannerAbogados";
 import AbogadosAyuda from "./componentes/AbogadosAyuda";
 import Abogados from "./componentes/Abogados";
 import Area from "./componentes/Area";
+import Abogado from "./componentes/Abogado";
+import Contacto from "./componentes/Contacto";
 
 function App() {
+  const [mostrarContacto, setMostrarContacto] = useState(false);
+
   return (
     <>
-      <Header />
-
+      <Header setMostrarContacto={setMostrarContacto} mostrarContacto={mostrarContacto}/>
+      
       <Routes>
         {/* Ruta principal con los componentes originales */}
         <Route
           path="/"
           element={
             <>
-              <Banner />
+              <Banner  setMostrarContacto={setMostrarContacto} />
               <Ayuda />
               <BannerMini />
               <Card1 />
             
               <Card2 />
               <Card3 />
-              <Resolucion />
-              <Agenda />
+              <Resolucion setMostrarContacto={setMostrarContacto} />
+              <Agenda setMostrarContacto={setMostrarContacto}/>
               <Map />
               <Dudas />
             </>
@@ -65,7 +71,7 @@ function App() {
             <Valores/>
             <BannerMini2/>
             <Especialistas/>
-            <Card4/>
+            <Card4 setMostrarContacto={setMostrarContacto}/>
             </>
           } />
 
@@ -78,8 +84,9 @@ function App() {
             </>
           } />
 
-<Route path="/areas/:id" element={<Area />} />
+<Route path="/areas/:id" element={<Area   setMostrarContacto={setMostrarContacto} mostrarContacto={mostrarContacto}/>} />
 
+<Route path="/abogado/:id" element={<Abogado />} />
 
       </Routes>
 

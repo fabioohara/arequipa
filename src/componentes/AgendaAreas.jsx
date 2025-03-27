@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getData } from "../services/index";
 
-const AgendaAreas = () => {
+const AgendaAreas = ({ setMostrarContacto }) => {
      const { id } = useParams();
       const [datos, setDatos] = useState([]);
     
@@ -44,7 +44,7 @@ const AgendaAreas = () => {
             <h2 className="texto-blanco"  key={dato.id} >{dato.texto}</h2> 
       ))}
 
-      <div className="button2">
+      <div className="button2" onClick={() => setMostrarContacto(true)}>
             Agendar una consulta {'>'}
           </div>
     

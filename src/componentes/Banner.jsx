@@ -41,7 +41,7 @@ const slidesMobile = [
   },
 ];
 
-const Banner = () => {
+const Banner = ({ setMostrarContacto }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
@@ -96,7 +96,7 @@ const Banner = () => {
                 <div className="shadow">
                   <h1>{slide.title}</h1>
                   <p>{slide.description}</p>
-                  <div className="div-rounded-banner">Contactar &nbsp;{" >"}</div>
+                  <div className="div-rounded-banner" onClick={() => setMostrarContacto(true)}>Contactar &nbsp;{" >"}</div>
                 </div>
                 <img
                   className="banner-img"

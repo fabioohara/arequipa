@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -80,9 +82,12 @@ const BannerExpertos = () => {
           </div>
         ))}
       </Slider> <br/>
-      <div className="button1">
-            Conoce a todo el equipo {'>'}
+
+<Link to='/abogados' style={{textDecoration:"none"}}>  
+    <div className="button1">
+             Conoce a todo el equipo {'>'}
           </div>
+          </Link>
     </div>
 
   );

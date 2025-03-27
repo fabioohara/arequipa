@@ -1,17 +1,17 @@
 import React from 'react'
 import card2 from '../assets/card2.jpg'
 
-const Agenda = () => {
+const Agenda = ({ setMostrarContacto }) => {
   return (
-    <div class="container2">
+    <div className="container2">
    
-    <div class="text-contentC">
+    <div className="text-contentC">
       <h1>Agenda una consulta</h1>
-      <p class="p-no-margin">a partir de S/.149*</p>
-      <div className="button2">
+      <p className="p-no-margin">a partir de S/.149*</p>
+      <div className="button2" onClick={() => setMostrarContacto(true)}>
             Agendar una consulta {'>'}
           </div>
-      <p class="p-no-margin">El costo de la consulta será descontado de nuestros honorarios si decides contratarnos para tu caso.</p>
+      <p className="p-no-margin">El costo de la consulta será descontado de nuestros honorarios si decides contratarnos para tu caso.</p>
     </div>
    
   </div>

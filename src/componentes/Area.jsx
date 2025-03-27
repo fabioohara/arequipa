@@ -6,14 +6,14 @@ import Areas2 from './Areas2'
 import AgendaAreas from './AgendaAreas'
 import Areas4 from './Areas4'
 
-const Area = () => {
+const Area = ({ setMostrarContacto, mostrarContacto }) => { 
   return (
     <>
-       <BannerAreas/>
+       <BannerAreas  setMostrarContacto={setMostrarContacto} mostrarContacto={mostrarContacto}/>
        <BannerMiniArea/>
        <Areas1/>
        <Areas2/>
-       <AgendaAreas/>
+       <AgendaAreas  setMostrarContacto={setMostrarContacto} mostrarContacto={mostrarContacto}/>
        <Areas4/>
     </>
  

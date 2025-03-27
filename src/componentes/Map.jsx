@@ -14,12 +14,12 @@ const Map = () => {
 
 
   return (
-    <div class="container-rounded">
+    <div className="container-rounded">
    
 
     <img className="left-image2" src={map} alt="Descripción de la imagen" onClick={handleOpenMaps} />
 
-    <div class="text-contentR2">
+    <div className="text-contentR2">
         <br/>
       <h1>Visítanos</h1>
    

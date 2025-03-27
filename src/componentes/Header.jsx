@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import logo from "../assets/logosa.png";
+import Contacto from "./Contacto";
 
-const Header = () => {
+const Header = ({ setMostrarContacto, mostrarContacto }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -22,7 +23,10 @@ const Header = () => {
     return () => document.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
+ 
   return (
+    <>
+    <Contacto visible={mostrarContacto} onClose={() => setMostrarContacto(false)}/>
     <div className="header">
       <img src={logo} alt="Logo"  className="logo" />
 
@@ -62,8 +66,9 @@ const Header = () => {
         </ul>
       </nav>
 
-      <div className='div-rounded'>CONTACTAR &nbsp;{'>'}</div>
+      <div className='div-rounded'  onClick={() => setMostrarContacto(true)}>CONTACTAR &nbsp;{'>'}</div>
     </div>
+    </>
   );
 };
 

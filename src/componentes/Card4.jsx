@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Card4 = () => {
+const Card4 = ({setMostrarContacto}) => {
   return (
-    <div class="container-red gradient">
+    <div className="container-red gradient">
    
-    <div class="text-contentD">
+    <div className="text-contentD">
       <h2>Especialistas en Todas las Áreas del Derecho</h2>
     <p>Permítenos ofrecerte la tranquilidad que mereces</p>
-    <div className="button2">
-            Conoce a todo el equipo {'>'}
+    <div className="button2" onClick={() => setMostrarContacto(true)}>
+            Agendar una consulta {'>'}
           </div>
     </div>
    
