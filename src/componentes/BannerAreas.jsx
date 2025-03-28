@@ -66,23 +66,23 @@ const BannerAreas = ({ setMostrarContacto }) => {
     <div className="banner-areas">
       {isMobile ? (
         <Slider {...settings} className="slick-slider">
-          {datos.map((dato) => (
-            <div key={dato.id} className="slick-slide">
+        
+           {datos.length > 0 && (
+            <div className="slick-slide">
               <div className="mobile-slide-content">
-            
-                 {dato.imagen && (
-            <img  className="mobile-banner-img" src={dato.imagen} alt={dato.nombre} />
-          )}
+              
+                {datos[0].imagen && (
+                  <img className="mobile-banner-img-studio" src={datos[0].imagen} alt={datos[0].nombre} />
+                )}
+                
                 <div className="mobile-shadow-estudio">
-                  <h1>{dato.titulo}</h1>
-                  <p>{dato.texto}</p> 
-                  <div className="button4" onClick={() => setMostrarContacto(true)}>
-            Agendar una consulta {'>'}
-          </div>
+                  <h1>{datos[0].titulo}</h1>
+                  <p>{datos[0].texto}</p>
                 </div>
               </div>
             </div>
-          ))}
+          )}
+          
         </Slider>
       ) : (
         <Slider {...settings} className="slick-slider-areas">

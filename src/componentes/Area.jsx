@@ -9,7 +9,8 @@ import Areas4 from './Areas4'
 const Area = ({ setMostrarContacto, mostrarContacto }) => { 
   return (
     <>
-       <BannerAreas  setMostrarContacto={setMostrarContacto} mostrarContacto={mostrarContacto}/>
+       <BannerAreas  setMostrarContacto={setMostrarContacto} mostrarContacto={mostrarContacto}/> 
+       
        <BannerMiniArea/>
        <Areas1/>
        <Areas2/>

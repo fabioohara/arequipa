@@ -20,7 +20,7 @@ const Contacto = ({ visible, onClose }) => {
             <input type="text" placeholder="Apellido" className='contacto-input' />
             <input type="text" placeholder="Celular" className='contacto-input'/>
             <input type="text" placeholder="Correo electrónico" className='contacto-input' />
-            <div className='button1' style={{width:"120px", marginTop:"30px"}}>Enviar</div>
+            <div className='buttonContacto' style={{width:"120px", marginTop:"30px"}}>Enviar</div>
           </div>
         </div>
       );

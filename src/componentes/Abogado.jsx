@@ -87,7 +87,7 @@ const scrollTo = (ref) => {
   <div className="button22" onClick={() => scrollTo(bioRef)}>Biografía</div>
   <div className="button22" onClick={() => scrollTo(especialidadesRef)}>Especialidades</div>
   <div className="button22" onClick={() => scrollTo(testimonialesRef)}>Testimoniales</div>
-  <div className="button22" onClick={() => scrollTo(contactoRef)}>Contactar</div>
+{/*}  <div className="button22" onClick={() => scrollTo(contactoRef)}>Contactar</div>{*/}
 </div>
       </div>
       </div>
@@ -117,7 +117,7 @@ const scrollTo = (ref) => {
         </div>
 
         <Testimoniales  ref={testimonialesRef} />
-
+{/*}
         <div key={datos[0].id}  ref={contactoRef} className="areasbox1a">
           <div className="areasbox1a_1">
             <h2>Contactar</h2>
@@ -142,6 +142,7 @@ const scrollTo = (ref) => {
 </div>
 
         </div>
+        {*/}
           <br />
           <br />
       </>
