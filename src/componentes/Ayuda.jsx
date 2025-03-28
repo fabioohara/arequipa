@@ -10,6 +10,8 @@ const Ayuda = () => {
     { id: 4, name: 'Derecho Corporativo',type: 'areas1' ,link:'/areas/4'},
     { id: 5, name: 'Derecho Familiar', type: 'areas2' ,link:'/areas/5'},
     { id: 6, name: 'Cobranzas y Controversias', type: 'areas3' ,link:'/areas/6'},
+    { id: 7, name: 'Derecho Tributario', type: 'areas2' ,link:'/areas/7'},
+
   
   ];
 

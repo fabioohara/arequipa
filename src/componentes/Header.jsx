@@ -60,6 +60,8 @@ const Header = ({ setMostrarContacto, mostrarContacto }) => {
               <li><a href="/areas/4">DERECHO CORPORATIVO</a></li>
               <li><a href="/areas/5">DERECHO DE FAMILIA</a></li>
               <li><a href="/areas/6">COBRANZAS Y CONTROVERSIAS</a></li>
+              <li><a href="/areas/7">DERECHO TRIBUTARIO</a></li>
+
             </ul>
           </li>
           <li><a href="/publicaciones">PUBLICACIONES</a></li>

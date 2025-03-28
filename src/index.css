@@ -718,9 +718,13 @@ h1 {
 /* Grilla adaptable */
 .areas-ayuda-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Por defecto: 3 columnas */
-   gap: 1rem; /* Espaciado entre los elementos */
-  justify-content: center; /* Centra los elementos en la grilla */
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 1rem;
+  justify-content: center;
+}
+
+.areas-ayuda-grid > :nth-child(7) {
+  grid-column: 2 / 3; /* Lo pone en la segunda columna (centro) */
 }
 
 .areas-ayuda-container h2 {
