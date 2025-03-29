@@ -3,7 +3,7 @@ import { useParams,Link } from "react-router-dom";
 import { getData } from "../services/index";
 
 const Areas2 = () => {
-  const { id } = useParams();
+  const { link } = useParams();
   const [datos, setDatos] = useState([]);
 
   // Función para obtener datos y actualizar el estado
@@ -27,8 +27,8 @@ const Areas2 = () => {
   }
 
   useEffect(() => {
-    fetchData("categorias.abogado_resumen", "id_area="+id); // Ejecutar al montar el componente
-  }, [id]);
+    fetchData("categorias.abogado_resumen", "link='"+link+"'"); // Ejecutar al montar el componente
+  }, [link]);
 
 
 

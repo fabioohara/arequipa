@@ -7,7 +7,7 @@ import {getData} from "../services/index"
 
 
 const BannerAreas = ({ setMostrarContacto }) => {
-    const { id } = useParams();
+    const { link } = useParams();
     const [datos, setDatos] = useState([]);
 
     // Función para obtener datos y actualizar el estado
@@ -33,8 +33,8 @@ const BannerAreas = ({ setMostrarContacto }) => {
   
     useEffect(() => {
     
-      fectchData("categorias.area","id="+id); // Ejecutar al montar el componente
-    }, [id]);
+      fectchData("categorias.area","link='"+link+"'"); // Ejecutar al montar el componente
+    }, [link]);
 
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);

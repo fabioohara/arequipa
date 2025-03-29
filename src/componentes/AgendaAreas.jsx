@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { getData } from "../services/index";
 
 const AgendaAreas = ({ setMostrarContacto }) => {
-     const { id } = useParams();
+     const { link } = useParams();
       const [datos, setDatos] = useState([]);
     
       // Función para obtener datos y actualizar el estado
@@ -28,9 +28,9 @@ const AgendaAreas = ({ setMostrarContacto }) => {
     
       useEffect(() => {
        
-        fetchData("categorias.areas_seccion", "id_area="+id+" and seccion_orden=3");
+        fetchData("categorias.areas_seccion", "link='"+link+"' and seccion_orden=3");
      
-          }, [id]);
+          }, [link]);
 
   return (
     <div className="container2 ancho65 redondeado">

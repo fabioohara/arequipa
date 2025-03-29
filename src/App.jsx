@@ -84,7 +84,7 @@ function App() {
             </>
           } />
 
-<Route path="/areas/:id" element={<Area   setMostrarContacto={setMostrarContacto} mostrarContacto={mostrarContacto}/>} />
+<Route path="/areas/:link" element={<Area   setMostrarContacto={setMostrarContacto} mostrarContacto={mostrarContacto}/>} />
 
 <Route path="/abogado/:id" element={<Abogado />} />
 

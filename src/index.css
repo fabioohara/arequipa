@@ -65,9 +65,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
- 
+  transition: all 0.4s ease-in-out;
 }
 
+.menu-parent{
+  position: relative;
+  background-color: transparent;
+}
 /* Menú en escritorio */
 .menu {
   list-style: none;
@@ -144,6 +148,7 @@ body {
 
   .navbar {
     display: flex !important;
+    transition: all 0.4s ease-in-out;
   }
 
   .dropdown:hover .dropdown-menu {
@@ -179,6 +184,7 @@ body {
   /* Mostrar menú cuando el navbar tiene la clase open */
   .navbar.open {
     display: block;
+    transition: all 0.4s ease-in-out;
   }
 
   /* Ajuste del menú en móviles */
@@ -188,11 +194,7 @@ body {
     text-align: center;
   }
 
-  .menu li {
-    width: 100%;
-    padding: 0.3rem 0;
-    
-  }
+ 
 
 
   .dropdown-menu {
@@ -608,11 +610,12 @@ h1 {
 .slide-content-mini {
   display: flex;
   flex-direction: column; /* Asegura que los elementos estén en columna */
-  justify-content: center; /* Centra verticalmente */
+  justify-content: space-between !important; /* Centra verticalmente */
   align-items: center; /* Centra horizontalmente */
   width: 100%;
   padding: 1rem; /* Añade espacio interno */
   box-sizing: border-box;
+  height:400px !important;
 }
 
 .banner-mini h1 {
@@ -939,6 +942,17 @@ h1 {
   height: auto;
   max-height: 400px;
 }
+
+.menu li {
+ 
+  text-transform: uppercase;
+  
+}
+
+.only-movil{
+  display: none;
+  
+}
 /* Responsividad: en pantallas pequeñas */
 @media (max-width: 768px) {
  
@@ -1068,15 +1082,15 @@ h1 {
     width: 90%;
     margin:0 auto;
     margin-top: 3rem;
-    height: 600px !important; /* Evita desbordamientos */
+    height: 480px !important; /* Evita desbordamientos */
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     background-color: #ffffff;
     box-shadow: 0px 2px 10px 1px rgba(161,155,161,1);
     box-sizing: border-box; 
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .container3 {
@@ -1416,8 +1430,109 @@ justify-content: center;
   
  
 }
+
+.menu-parent{
+  margin-left:-14px !important;
+  position: fixed !important;
+  
+  height: 100vh;
+  width: 100%;
+  top:0;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  z-index: 3000 !important;
+
+}
+
+.menu {
+  list-style: none;
+  margin: auto !important;
+  width: 65%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  flex-wrap: nowrap;
+  background-color: white;
+}
+
+.menu li {
+  width: 100%;
+  padding: 0.1rem 0rem;
+  text-transform: unset;
+
+  
+}
+
+.menu a {
+ 
+  color: #252525 !important;
+  font-size: large !important;
+  font-weight: bold !important;
+}
+
+.dropdown-menu {
+  display: flex !important;
+  flex-direction: column;
+  position: relative;
+  transform: translateX(-50%);
+  background-color: transparent;
+   border-top: #ff2e2e solid 2px;
+   border-bottom: #ff2e2e solid 2px;
+
+  z-index: 1000;
+  top:100%;
+  margin:20px 0;
+}
+
+.dropdown-menu li{
+  margin:0;
+  line-height: 1rem;
+}
+.only-movil{
+  display:block;
+
+}
+.only-movil a{
+  display:block;
+  color: #252525;
+}
+
+.cerrar-menu {
+  display: block !important;
+  
+     background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color:red;
+  }
+
+  .slide-content-mini {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    justify-content:flex-start !important; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    width: 100%;
+    padding: 0rem; /* Añade espacio interno */
+   
+    height:440px !important;
+  }
+
+  .slide-content-mini p{
+    padding: 0 !important;
+   margin: 0 0.5rem !important;
+   font-size: small !important;
+  }
+
+  .slide-content-mini h4{
+    padding: 0 !important;
+   margin: 0.5rem 0.5rem !important;
+  
+  }
 /* Acá */
 }
+
+
 
 
 /* Contenedor general */
@@ -3086,6 +3201,24 @@ padding:1rem;
   color:red;
 }
 
+.contenedor-cerrar{
+  width: 100%;
+  height: 10px;
+  display: flex;
+  justify-content: flex-end !important;
+  
+ 
+}
+
+.cerrar-menu {
+display: none;
+
+   background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color:red;
+}
 
 .buttonContacto {
   background: linear-gradient(135deg, #cd2c31, #61161c); /* Degradado de colores */

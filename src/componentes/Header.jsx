@@ -41,31 +41,44 @@ const Header = ({ setMostrarContacto, mostrarContacto }) => {
 
       {/* Navbar con estado abierto/cerrado */}
       <nav className={`navbar ${isOpen ? "open" : ""}`}>
+      <div className="menu-parent">
+      
         <ul className="menu">
-          <li><a href="/">INICIO</a></li>
-          <li><a href="/estudio">EL ESTUDIO</a></li>
-          <li><a href="/abogados">ABOGADOS</a></li>
+          <div className="contenedor-cerrar">
+          <button className="cerrar-menu" onClick={() => setIsOpen(false)}>✕</button>
+          </div>
+       
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/estudio">El Estudio</a></li>
+          <li><a href="/abogados">Abogados</a></li>
           <li 
             className={`dropdown ${isDropdownOpen ? "open" : ""}`}
             ref={dropdownRef}
             onMouseEnter={() => setIsDropdownOpen(true)}
           >
             <a href="#" className="dropdown-toggle">
-              ÁREAS DE PRÁCTICAS &nbsp; <span className='rotated-text-align'>{' >'}</span>
+              Áreas de Prácticas &nbsp; <span className='rotated-text-align'>{' >'}</span>
             </a>
+          
             <ul className="dropdown-menu">
-              <li><a href="/areas/1">DERECHO PENAL</a></li>
-              <li><a href="/areas/2">DERECHO INMOBILIARIO</a></li>
-              <li><a href="/areas/3">DERECHO LABORAL</a></li>
-              <li><a href="/areas/4">DERECHO CORPORATIVO</a></li>
-              <li><a href="/areas/5">DERECHO DE FAMILIA</a></li>
-              <li><a href="/areas/6">COBRANZAS Y CONTROVERSIAS</a></li>
-              <li><a href="/areas/7">DERECHO TRIBUTARIO</a></li>
+              <li><a href="/areas/abogados-penalistas">Derecho Penal</a></li>
+              <li><a href="/areas/abogados-derecho-inmobiliario">Derecho Inmobiliario</a></li>
+              <li><a href="/areas/abogados-laborales">Derecho Laboral</a></li>
+              <li><a href="/areas/abogados-derecho-corporativo">Derecho Corporativo</a></li>
+              <li><a href="/areas/abogados-derecho-familiar">Derecho de Familia</a></li>
+              <li><a href="/areas/abogados-cobranzas-recuperaciones">Cobranzas y Controverias</a></li>
+              <li><a href="/areas/abogados-derecho-tributario">Derecho Tributario</a></li>
 
             </ul>
+            
           </li>
-          <li><a href="/publicaciones">PUBLICACIONES</a></li>
+          <li><a href="/publicaciones">Publicaciones</a></li>
+
+          <li className="only-movil"><a href="/proteccion">Senisse Protección Legal</a></li>
+          <li className="only-movil"><a href="/sedes">Sedes</a></li>
+
         </ul>
+        </div>
       </nav>
 
       <div className='div-rounded'  onClick={() => setMostrarContacto(true)}>CONTACTAR &nbsp;{'>'}</div>

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { getData } from "../services/index";
 
 const Areas4 = () => {
-  const { id } = useParams();
+  const { link } = useParams();
   const [datos, setDatos] = useState([]);
 
   // Función para obtener datos y actualizar el estado
@@ -27,8 +27,8 @@ const Areas4 = () => {
   }
 
   useEffect(() => {
-    fetchData("categorias.areas_seccion", "id_area="+id+" and seccion_orden=4"); // Ejecutar al montar el componente
-  }, [id]);
+    fetchData("categorias.areas_seccion", "link='"+link+"' and seccion_orden=4"); // Ejecutar al montar el componente
+  }, [link]);
 
   // **Agrupar datos por nombre**
   const datosAgrupados = datos.reduce((acc, dato) => {
