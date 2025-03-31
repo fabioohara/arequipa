@@ -724,7 +724,7 @@ h1 {
   width: 70%;
   margin: 0 auto; /* Centra el contenedor */
   z-index: 501;
-  margin-top: 6rem !important;
+  margin-top: 3rem !important;
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -1078,7 +1078,8 @@ h1 {
     width: 70%;
     margin: 0 auto; /* Centra el contenedor */
     z-index: 501;
-    margin-top: 3rem;
+    margin-top: 7rem !important;
+
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -1786,7 +1787,7 @@ transform-origin: top;
     width: 70%;
     margin: 0 auto; /* Centra el contenedor */
     z-index: 501;
-    margin-top: 3rem;
+    margin-top:7rem !important;
     display: flex;
     flex-direction: column;
     justify-content:center;
