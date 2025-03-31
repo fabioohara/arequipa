@@ -30,15 +30,16 @@ import AbogadosAyuda from "./componentes/AbogadosAyuda";
 import Abogados from "./componentes/Abogados";
 import Area from "./componentes/Area";
 import Abogado from "./componentes/Abogado";
-import Contacto from "./componentes/Contacto";
-
+import Publicaciones from "./componentes/Publicaciones"
+import Publicacion from "./componentes/Publicacion"
+import ScrollToTop from "./componentes/ScrollToTop";
 function App() {
   const [mostrarContacto, setMostrarContacto] = useState(false);
 
   return (
     <>
       <Header setMostrarContacto={setMostrarContacto} mostrarContacto={mostrarContacto}/>
-      
+      <ScrollToTop />
       <Routes>
         {/* Ruta principal con los componentes originales */}
         <Route
@@ -86,7 +87,13 @@ function App() {
 
 <Route path="/areas/:link" element={<Area   setMostrarContacto={setMostrarContacto} mostrarContacto={mostrarContacto}/>} />
 
-<Route path="/abogado/:id" element={<Abogado />} />
+<Route path="/abogado/:link_abogado" element={<Abogado />} />
+
+<Route path="/publicaciones" element={<Publicaciones />} />
+
+<Route path="/publicacion/:link_publicacion" element={
+  <Publicacion key={window.location.pathname} />
+} />
 
       </Routes>
 

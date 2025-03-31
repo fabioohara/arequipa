@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import {getData} from "../services";
 import Testimoniales from "./Testimoniales"
 const Abogado = () => {
-    const { id } = useParams();
+    const { link_abogado } = useParams();
     const [datos, setDatos] = useState([]);
   
 
@@ -30,9 +30,9 @@ const Abogado = () => {
   
     useEffect(() => {
      
-      fetchData("datos.abogado", "id="+id);
+      fetchData("datos.abogado", "link_abogado='"+link_abogado+"'");
         
-        }, [id]);
+        }, [link_abogado]);
 
         const renderTextoConViñetas = (texto) => {
             if (!texto) return null;

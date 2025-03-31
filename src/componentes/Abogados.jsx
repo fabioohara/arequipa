@@ -19,7 +19,7 @@ const groupByRegion = (abogados) => {
   const Abogados = () => {
  
     const [datos, setDatos] = useState([]);
-  
+    
     // Función para obtener datos y actualizar el estado
     async function fetchData(area, filtro) {
       try {
@@ -81,7 +81,7 @@ const groupByRegion = (abogados) => {
     )}
     <div className="tarjetaP">
       <p>{abogado.nombre}</p>
-      <Link to={`/abogado/${abogado.id}`} style={{textDecoration:"none"}}>
+      <Link to={`/abogado/${abogado.link_abogado}`} style={{textDecoration:"none"}}>
   <div className="button3">Ver Más {'>'}</div>
 </Link>
     </div>

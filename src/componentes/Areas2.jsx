@@ -53,7 +53,7 @@ const Areas2 = () => {
               <h2 >{dato.nombre}</h2> 
               <h3  >{dato.cargo}</h3> 
               <p  >{dato.bio}</p> 
-              <Link to={`/abogado/${dato.id}`} style={{textDecoration:"none"}}>
+              <Link to={`/abogado/${dato.link_abogado}`} style={{textDecoration:"none"}}>
               <div className="button5">Leer Más {'>'}</div>
               </Link>
               </div>
