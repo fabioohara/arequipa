@@ -39,6 +39,7 @@ function App() {
   return (
     <>
       <Header setMostrarContacto={setMostrarContacto} mostrarContacto={mostrarContacto}/>
+    
       <ScrollToTop />
       <Routes>
         {/* Ruta principal con los componentes originales */}
@@ -46,7 +47,8 @@ function App() {
           path="/"
           element={
             <>
-              <Banner  setMostrarContacto={setMostrarContacto} />
+      <div id="top-anchor" style={{ position: "relative", top: "-80px", height: "0px" }}></div>
+      <Banner  setMostrarContacto={setMostrarContacto} />
               <Ayuda />
               <BannerMini />
               <Card1 />
@@ -64,7 +66,8 @@ function App() {
         {/* Nueva ruta que muestra un nuevo componente */}
         <Route path="/estudio" element={
             <>
-              <BannerEstudio />
+      <div id="top-anchor" style={{ position: "relative", top: "-80px", height: "0px" }}></div>
+      <BannerEstudio />
              <EstudioAyuda/>
              <Mision/>
              <Expertos/>
@@ -79,20 +82,42 @@ function App() {
             {/* Nueva ruta que muestra un nuevo componente */}
         <Route path="/abogados" element={
             <>
-              <BannerAbogados />
+      <div id="top-anchor" style={{ position: "relative", top: "-80px", height: "0px",visibility:"hidden" }}></div>
+      <BannerAbogados />
               <AbogadosAyuda/>
               <Abogados/>
             </>
           } />
 
-<Route path="/areas/:link" element={<Area   setMostrarContacto={setMostrarContacto} mostrarContacto={mostrarContacto}/>} />
+<Route path="/areas/:link" element={<>
+  <div id="top-anchor" style={{ position: "relative", top: "-80px", height: "0px" }}></div>
+  <Area   setMostrarContacto={setMostrarContacto} mostrarContacto={mostrarContacto}/>
+  </>
+  } />
 
-<Route path="/abogado/:link_abogado" element={<Abogado />} />
+<Route path="/abogado/:link_abogado" element={
+  <>
+      <div id="top-anchor" style={{ position: "relative", top: "-80px", height: "0px" }}></div>
 
-<Route path="/publicaciones" element={<Publicaciones />} />
+  <Abogado />
+  </>
+  
+  } />
+
+<Route path="/publicaciones" element={
+<>
+<div id="top-anchor" style={{ position: "relative", top: "-80px", height: "0px" }}></div>
+
+  <Publicaciones />
+  </>
+  } />
 
 <Route path="/publicacion/:link_publicacion" element={
-  <Publicacion key={window.location.pathname} />
+  <>
+      <div id="top-anchor" style={{ position: "relative", top: "-80px", height: "0px" }}></div>
+
+  <Publicacion/>
+  </>
 } />
 
       </Routes>

@@ -13,8 +13,11 @@ const Publicacion = () => {
     const [datos2, setDatos2] = useState([]);
 
     useEffect(() => {
-        if (datos.length > 0 && topRef.current) {
-          topRef.current.scrollIntoView({ behavior: "auto" });
+        if (datos.length > 0) {
+          const anchor = document.getElementById("top-marcador");
+          if (anchor) {
+            anchor.scrollIntoView({ behavior: "auto" });
+          }
         }
       }, [datos]);
 
@@ -81,6 +84,7 @@ const Publicacion = () => {
 
   return (
     <>
+    <div id="top-marcador" style={{ position: "relative", top: "-80px" }}></div>
       {datos.length > 0 ? (    
 <div ref={topRef} className='publicacion' key={datos[0].id}>
 <div className='columna1'>

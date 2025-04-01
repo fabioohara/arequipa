@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from "react-router-dom";
 
 import logofooter from '../assets/logo-footer.png'
+import proteccion from '../assets/proteccion.png'
+
 const Footer = () => {
  return (
      <div className="footer">
@@ -19,6 +21,13 @@ const Footer = () => {
     <li><i className="fa fa-phone"></i>&nbsp; +51 992 077 639</li>
     <li><i className="fa fa-facebook"></i>&nbsp; Senisse, Álvarez Garcia Abogados</li>
     <li><i className="fa fa-map-marker"></i>&nbsp; Av. Ejército 101 Of. 506 - Arequipa</li>
+   
+  </ul>
+
+  <ul className="menuFooter" >
+    <li>  <Link to='#' style={{textDecoration:"none"}}>Otros Servicios</Link></li>
+    <li><img src={proteccion} alt="" width={180}/></li>
+   
    
   </ul>
     

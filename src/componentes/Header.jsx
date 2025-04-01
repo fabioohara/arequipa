@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import logo from "../assets/logosa.png";
 import Contacto from "./Contacto";
+import { useNavigate,Link  } from "react-router-dom";
 
 const Header = ({ setMostrarContacto, mostrarContacto }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,9 +49,9 @@ const Header = ({ setMostrarContacto, mostrarContacto }) => {
           <button className="cerrar-menu" onClick={() => setIsOpen(false)}>✕</button>
           </div>
        
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/estudio">El Estudio</a></li>
-          <li><a href="/abogados">Abogados</a></li>
+          <li><Link to="/" onClick={() => setIsOpen(false)}>Inicio</Link></li>
+          <li><Link to="/estudio" onClick={() => setIsOpen(false)}>El Estudio</Link></li>
+          <li><Link to="/abogados" onClick={() => setIsOpen(false)}>Abogados</Link></li>
           <li 
             className={`dropdown ${isDropdownOpen ? "open" : ""}`}
             ref={dropdownRef}
@@ -61,21 +62,21 @@ const Header = ({ setMostrarContacto, mostrarContacto }) => {
             </a>
           
             <ul className="dropdown-menu">
-              <li><a href="/areas/abogados-penalistas">Derecho Penal</a></li>
-              <li><a href="/areas/abogados-derecho-inmobiliario">Derecho Inmobiliario</a></li>
-              <li><a href="/areas/abogados-laborales">Derecho Laboral</a></li>
-              <li><a href="/areas/abogados-derecho-corporativo">Derecho Corporativo</a></li>
-              <li><a href="/areas/abogados-derecho-familiar">Derecho de Familia</a></li>
-              <li><a href="/areas/abogados-cobranzas-recuperaciones">Cobranzas y Controverias</a></li>
-              <li><a href="/areas/abogados-derecho-tributario">Derecho Tributario</a></li>
+              <li><Link to="/areas/abogados-penalistas" onClick={() => setIsOpen(false)}>Derecho Penal</Link></li>
+              <li><Link to="/areas/abogados-derecho-inmobiliario" onClick={() => setIsOpen(false)}>Derecho Inmobiliario</Link></li>
+              <li><Link to="/areas/abogados-laborales" onClick={() => setIsOpen(false)}>Derecho Laboral</Link></li>
+              <li><Link to="/areas/abogados-derecho-corporativo" onClick={() => setIsOpen(false)}>Derecho Corporativo</Link></li>
+              <li><Link to="/areas/abogados-derecho-familiar" onClick={() => setIsOpen(false)}>Derecho de Familia</Link></li>
+              <li><Link to="/areas/abogados-cobranzas-recuperaciones" onClick={() => setIsOpen(false)}>Cobranzas y Controverias</Link></li>
+              <li><Link to="/areas/abogados-derecho-tributario" onClick={() => setIsOpen(false)}>Derecho Tributario</Link></li>
 
             </ul>
             
           </li>
-          <li><a href="/publicaciones">Publicaciones</a></li>
+          <li><Link to="/publicaciones" onClick={() => setIsOpen(false)}>Publicaciones</Link></li>
 
-          <li className="only-movil"><a href="/proteccion">Senisse Protección Legal</a></li>
-          <li className="only-movil"><a href="/sedes">Sedes</a></li>
+          <li className="only-movil"><Link to="/proteccion" onClick={() => setIsOpen(false)}>Senisse Protección Legal</Link></li>
+          <li className="only-movil"><Link to="/sedes" onClick={() => setIsOpen(false)}>Sedes</Link></li>
 
         </ul>
         </div>

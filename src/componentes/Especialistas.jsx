@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from "react-router-dom";
+
 import e1 from '../assets/especialistas/e1.jpg'
 import e2 from '../assets/especialistas/e2.jpg'
 import e3 from '../assets/especialistas/e3.jpg'
@@ -9,12 +11,12 @@ import e6 from '../assets/especialistas/e6.jpg'
 
 
 const especialidades = [
-  { id: 1, image: e1, title:`Derecho Penal`,type: 'areas1' },
-  { id: 2, image: e2, title: "Derecho Civil e Inmobiliario",type: 'areas2' },
-  { id: 3, image: e3, title: "Derecho Laboral Empresarial",type: 'areas3' },
-  { id: 4, image: e4, title: "Derecho Corporativo" ,type: 'areas1'},
-  { id: 5, image: e5, title: "Derecho de Familia" ,type: 'areas2'},
-  { id: 6, image: e6, title: "Derecho Cobranzas",type: 'areas3' },
+  { id: 1, image: e1, title:`Derecho Penal`,type: 'areas1',link:'/areas/abogados-penalistas' },
+  { id: 2, image: e2, title: "Derecho Civil e Inmobiliario",type: 'areas2',link:'/areas/abogados-derecho-inmobiliario' },
+  { id: 3, image: e3, title: "Derecho Laboral Empresarial",type: 'areas3',link:'/areas/abogados-laborales' },
+  { id: 4, image: e4, title: "Derecho Corporativo" ,type: 'areas1',link:'/areas/abogados-derecho-corporativo'},
+  { id: 5, image: e5, title: "Derecho de Familia" ,type: 'areas2',link:'/areas/abogados-derecho-familiar'},
+  { id: 6, image: e6, title: "Derecho Cobranzas",type: 'areas3',link:'/areas/abogados-cobranzas-recuperaciones' },
 ];
 
 const getBackground = (type) => {
@@ -41,15 +43,15 @@ const Especialistas = () => {
    </div>
    <div className="tarjetas"> 
    {especialidades.map((especialidad, index) => (
-   
+    
           <div key={especialidad.id} className="tarjeta"  style={{ background: getBackground(especialidad.type) }}>
-            <img src={especialidad.image} alt="" className='tarjetaImg'/>
+              <Link to={especialidad.link}  style={{ color:"white",textDecoration:"none" }}><img src={especialidad.image} alt="" className='tarjetaImg'/></Link>
             <div className='tarjetaP'>
-                  <p>{especialidad.title}</p>
+            <Link to={especialidad.link}  style={{ color:"white",textDecoration:"none" }}> <p>{especialidad.title}</p></Link>
                   </div>
         
           </div>
-         
+       
         ))}
         </div>
    </div>

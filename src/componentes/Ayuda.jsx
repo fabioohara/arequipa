@@ -4,13 +4,13 @@ import { Routes, Route,Link } from "react-router-dom";
 
 const Ayuda = () => {
   const areas = [
-    { id: 1, name: 'Derecho Penal',type: 'areas1' ,link:'/areas/1'},
-    { id: 2, name: 'Derecho Inmobiliario', type: 'areas2' ,link:'/areas/2'},
-    { id: 3, name: 'Derecho Laboral', type: 'areas3' ,link:'/areas/3'},
-    { id: 4, name: 'Derecho Corporativo',type: 'areas1' ,link:'/areas/4'},
-    { id: 5, name: 'Derecho Familiar', type: 'areas2' ,link:'/areas/5'},
-    { id: 6, name: 'Cobranzas y Controversias', type: 'areas3' ,link:'/areas/6'},
-    { id: 7, name: 'Derecho Tributario', type: 'areas2' ,link:'/areas/7'},
+    { id: 1, name: 'Derecho Penal',type: 'areas1' ,link:'/areas/abogados-penalistas'},
+    { id: 2, name: 'Derecho Inmobiliario', type: 'areas2' ,link:'/areas/abogados-derecho-inmobiliario'},
+    { id: 3, name: 'Derecho Laboral', type: 'areas3' ,link:'/areas/abogados-laborales'},
+    { id: 4, name: 'Derecho Corporativo',type: 'areas1' ,link:'/areas/abogados-derecho-corporativo'},
+    { id: 5, name: 'Derecho Familiar', type: 'areas2' ,link:'/areas/abogados-derecho-familiar'},
+    { id: 6, name: 'Cobranzas y Controversias', type: 'areas3' ,link:'/areas/abogados-cobranzas-recuperaciones'},
+    { id: 7, name: 'Derecho Tributario', type: 'areas2' ,link:'/areas/abogados-derecho-tributario'},
 
   
   ];
