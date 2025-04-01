@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import estudio from "../assets/estudio.jpg";
+import estudio2 from "../assets/estudio2.jpg";
 
-import slide01movil from "../assets/slide01-movil.jpg";
 
 
 const slidesDesktop = [
@@ -17,7 +17,7 @@ const slidesDesktop = [
   },
   {
     id: 2,
-    image: estudio,
+    image: estudio2,
     title: "El Estudio",
     description:
     "En Senisse, Álvarez Garcia Abogados estamos comprometidos en brindar soluciones legales efectivas para salvaguardar tus intereses.",
@@ -27,7 +27,7 @@ const slidesDesktop = [
 const slidesMobile = [
   {
     id: 1,
-    image: estudio,
+    image: estudio2,
     title: "El Estudio",
     description:
     "En Senisse, Álvarez Garcia Abogados estamos comprometidos en brindar soluciones legales efectivas para salvaguardar tus intereses.",

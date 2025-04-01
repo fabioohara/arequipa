@@ -74,7 +74,7 @@ const BannerAbogados = () => {
                   src={slide.image}
                   alt={`Slide ${slide.id}`}
                 />
-                <div className="mobile-shadow-estudio">
+                <div className="mobile-shadow-abogados">
                   <h1>{slide.title}</h1>
                 
                  

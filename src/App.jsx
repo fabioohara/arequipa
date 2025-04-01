@@ -33,13 +33,16 @@ import Abogado from "./componentes/Abogado";
 import Publicaciones from "./componentes/Publicaciones"
 import Publicacion from "./componentes/Publicacion"
 import ScrollToTop from "./componentes/ScrollToTop";
+import Whatsapp from "./componentes/Whatsapp";
+
 function App() {
   const [mostrarContacto, setMostrarContacto] = useState(false);
-
+  const [mostrarWhatsapp, setMostrarWhatsapp] = useState(false);
   return (
     <>
       <Header setMostrarContacto={setMostrarContacto} mostrarContacto={mostrarContacto}/>
-    
+      <Whatsapp visible={mostrarWhatsapp} onClose={() => setMostrarWhatsapp(false)}/>
+      
       <ScrollToTop />
       <Routes>
         {/* Ruta principal con los componentes originales */}
@@ -126,8 +129,8 @@ function App() {
       <SubFooter />
 
       {/* Ícono de WhatsApp */}
-      <a
-        href={`https://wa.me/905452024`}
+      <div
+        href="#"
         target="_blank"
         className="whatsapp-icon"
         style={{
@@ -135,10 +138,11 @@ function App() {
           bottom: "15px",
           right: "20px",
           zIndex: "2000",
-        }}
+        }} 
+        onClick={() => setMostrarWhatsapp(true)}
       >
         <img src={whatsapp} alt="WhatsApp" />
-      </a>
+      </div>
     </>
   );
 }
