@@ -29,8 +29,9 @@ const Header = ({ setMostrarContacto, mostrarContacto }) => {
     <>
     <Contacto visible={mostrarContacto} onClose={() => setMostrarContacto(false)}/>
     <div className="header">
+    <Link to="/" onClick={() => setIsOpen(false)}>
       <img src={logo} alt="Logo"  className="logo" />
-
+</Link>
       {/* Botón de hamburguesa para dispositivos móviles */}
       <button 
         className="menu-toggle" 
