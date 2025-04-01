@@ -9,7 +9,7 @@ import stars from '../assets/starts.svg'
 
 const Testimoniales = () => {
 
- const { id } = useParams();
+ const { link_abogado } = useParams();
     const [datos, setDatos] = useState([]);
   
     // Función para obtener datos y actualizar el estado
@@ -35,9 +35,9 @@ const Testimoniales = () => {
   
     useEffect(() => {
      
-      fetchData("datos.testimonio", "id_abogado="+id);
+      fetchData("datos.testimonios", "link_abogado='"+link_abogado+"'");
         
-        }, [id]);
+        }, [link_abogado]);
 
 
   const settings = {

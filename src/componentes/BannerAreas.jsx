@@ -48,24 +48,12 @@ const BannerAreas = ({ setMostrarContacto }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 5000,
-    cssEase: "ease-in-out",
-    arrows: false,
-    pauseOnHover: true,
-    swipe: false,
-  };
+  
 
   return (
     <div className="banner-areas">
       {isMobile ? (
-        <Slider {...settings} className="slick-slider">
+        <div>
         
            {datos.length > 0 && (
             <div className="slick-slide">
@@ -83,9 +71,9 @@ const BannerAreas = ({ setMostrarContacto }) => {
             </div>
           )}
           
-        </Slider>
+        </div>
       ) : (
-        <Slider {...settings} className="slick-slider-areas">
+        <div className="slick-slide">
           {datos.map((dato) => (
             <div key={dato.id} className="slick-slide-areas">
               <div className="slide-content-areas">
@@ -104,7 +92,7 @@ const BannerAreas = ({ setMostrarContacto }) => {
               </div>
             </div>
           ))}
-        </Slider>
+        </div>
       )}
     </div>
   );

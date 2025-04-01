@@ -33,7 +33,7 @@ const Map = () => {
       <div className='map-movil'>
       <i className="fa fa-map-marker" style={{color:'#d52c31', fontSize:'3rem'}}></i>
       <p className='p-movil-loc'>
-      Avenida Reducto 861, Of. 303, Miraflores, Lima - Perú
+      Avenida Ejército 101 Edificio Naysa 1 Of. 506, Yanahuara, Arequipa - Perú
       </p>
 </div>
       <img className="left-image3" src={mapa2} alt="Descripción de la imagen" />
