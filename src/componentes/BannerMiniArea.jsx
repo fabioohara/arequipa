@@ -66,7 +66,7 @@ const BannerMiniArea = () => {
           <div key={dato.id} className="slick-slide-mini">
             <div className="slide-content-mini">
              <b>
-                <p style={{fontWeight:"lighter",fontStyle:"oblique",fontFamily:"cursive"}}>{dato.texto}</p>
+                <p style={{fontWeight:"lighter",fontStyle:"oblique"}}>{dato.texto}</p>
                 <h4>{dato.testigo}<br />{dato.cargo}</h4>
                 </b>
             
