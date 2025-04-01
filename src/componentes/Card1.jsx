@@ -2,7 +2,7 @@ import React from 'react'
 import card1 from '../assets/card1.jpg'
 const Card1 = () => {
   return (
-    <div className="container">
+    <div className="container1">
     <img className="left-image" src={card1} alt="Descripción de la imagen" />
     <div className="text-content">
       <h1 >¿Estás enfrentando un problema legal y no sabes por dónde empezar?</h1>

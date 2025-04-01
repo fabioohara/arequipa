@@ -76,7 +76,7 @@ const Header = ({ setMostrarContacto, mostrarContacto }) => {
           </li>
           <li><Link to="/publicaciones" onClick={() => setIsOpen(false)}>Publicaciones</Link></li>
 
-          <li className="only-movil"><Link to="/proteccion" onClick={() => setIsOpen(false)}>Senisse Protección Legal</Link></li>
+          <li className="only-movil"><Link to="https://proteccionlegal.pe/" onClick={() => setIsOpen(false)}>Senisse Protección Legal</Link></li>
           <li className="only-movil"><Link to="/sedes" onClick={() => setIsOpen(false)}>Sedes</Link></li>
 
         </ul>

@@ -26,7 +26,7 @@ const Footer = () => {
 
   <ul className="menuFooter" >
     <li>  <Link to='#' style={{textDecoration:"none"}}>Otros Servicios</Link></li>
-    <li><img src={proteccion} alt="" width={180}/></li>
+    <li> <Link to='https://proteccionlegal.pe/' style={{textDecoration:"none"}}><img src={proteccion} alt="" width={180}/></Link></li>
    
    
   </ul>
