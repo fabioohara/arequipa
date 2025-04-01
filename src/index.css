@@ -989,7 +989,7 @@ h1 {
     width: 100%; /* Ocupa todo el ancho del contenedor */
     padding:0.2rem;
     display: flex;
-    border-radius: 20px;
+    border-radius: 30px;
     
   }
 
@@ -1727,7 +1727,7 @@ transform-origin: top;
     width: 100%; /* Ocupa todo el ancho del contenedor */
     padding:0.2rem;
     display: flex;
-    border-radius: 20px;
+    border-radius: 30px;
     
   }
 
