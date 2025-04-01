@@ -1699,6 +1699,10 @@ transform-origin: top;
   width: 70%;
     
 }
+
+.ancho65{
+  width:90% !important;
+}
 /* Acá */
 }
 
@@ -2359,6 +2363,9 @@ font-size: x-large;
 .mobile-shadow-abogados h1 {
   width: 70%;
     
+}
+.ancho65{
+  width:90% !important;
 }
 /* Acá */
 }

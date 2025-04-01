@@ -17,7 +17,7 @@ const slidesDesktop = [
   },
   {
     id: 2,
-    image: estudio2,
+    image: estudio,
     title: "El Estudio",
     description:
     "En Senisse, Álvarez Garcia Abogados estamos comprometidos en brindar soluciones legales efectivas para salvaguardar tus intereses.",
@@ -34,7 +34,7 @@ const slidesMobile = [
 },
   {
     id: 2,
-    image: estudio,
+    image: estudio2,
     title: "El Estudio",
     description:
     "En Senisse, Álvarez Garcia Abogados estamos comprometidos en brindar soluciones legales efectivas para salvaguardar tus intereses.",
