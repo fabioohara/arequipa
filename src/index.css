@@ -1446,7 +1446,7 @@ justify-content: center;
 }
 
 .redondeado {
-  margin-top:0rem; /* mínimo 80px, máximo 120px según ancho de pantalla */
+  margin-top:24% !important; /* mínimo 80px, máximo 120px según ancho de pantalla */
 }
 
 .dropdown-menu li a {
