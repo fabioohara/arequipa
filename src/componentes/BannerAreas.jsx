@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {getData} from "../services/index"
@@ -52,31 +51,11 @@ const BannerAreas = ({ setMostrarContacto }) => {
 
   return (
     <div className="banner-areas">
-      {isMobile ? (
-        <div>
-        
-           {datos.length > 0 && (
-            <div className="slick-slide">
-              <div className="mobile-slide-content">
-              
-                {datos[0].imagen && (
-                  <img className="mobile-banner-img-studio" src={datos[0].imagen} alt={datos[0].nombre} />
-                )}
-                
-                <div className="mobile-shadow-estudio">
-                  <h1>{datos[0].titulo}</h1>
-                  <p>{datos[0].texto}</p>
-                </div>
-              </div>
-            </div>
-          )}
-          
-        </div>
-      ) : (
-        <div className="slick-slide">
+      
+      
           {datos.map((dato) => (
-            <div key={dato.id} className="slick-slide-areas">
-              <div className="slide-content-areas">
+           
+              <div key={dato.id} className="slide-content-areas">
                
              
           {dato.imagen && (
@@ -90,10 +69,10 @@ const BannerAreas = ({ setMostrarContacto }) => {
           </div>          
                 </div>
               </div>
-            </div>
+           
           ))}
-        </div>
-      )}
+      
+   
     </div>
   );
 };

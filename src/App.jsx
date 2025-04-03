@@ -53,6 +53,7 @@ function App() {
       <div id="top-anchor" style={{ position: "relative", top: "-80px", height: "0px" }}></div>
       <Banner  setMostrarContacto={setMostrarContacto} />
               <Ayuda />
+              <div style={{height:"2rem"}}></div>
               <BannerMini />
               <Card1 />
             

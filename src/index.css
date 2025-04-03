@@ -379,23 +379,6 @@ h1 {
   background-color: #b2b2b2;
 }
 
-.banner-mini {
-  position: relative;
-  width: 60%;
-  margin:0 auto;
-  margin-top: 6rem;
-  height: auto;
-  overflow: hidden; /* Evita desbordamientos */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #ffffff;
-  box-shadow: 0px 2px 10px 1px rgba(161,155,161,1);
-  box-sizing: border-box; 
-  padding: 2rem;
-  z-index: 600;
-}
 
 
 
@@ -594,9 +577,8 @@ h1 {
 .banner-mini {
   position: relative; /* Necesario para posicionar la imagen relativa a este contenedor */
   width: 60%;
-  height: 480px !important;
+  height: 480px ;
   margin: 0 auto;
-  margin-top: 6rem;
   overflow: visible; /* Permite que el contenido sobresalga */
   display: flex;
   justify-content: center;
@@ -606,6 +588,8 @@ h1 {
   box-shadow: 0px 2px 10px 1px rgba(161, 155, 161, 1);
   box-sizing: border-box;
   color: #000;
+  z-index: 600;
+  
 }
 
 .slick-slider-mini {
@@ -1071,20 +1055,20 @@ h1 {
     text-align: center;
     width: 100%;
     margin: 0px !important;
-    height: 200px !important;
+    height: 100% !important;
     
 
     
   }
 
   .mobile-shadow-estudio h1 {
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-top:0.8rem !important;
   
   }
 
   .mobile-shadow-estudio p {
-    font-size: 0.85rem;
+    font-size: 1rem;
     padding: 1rem;
     margin-top:-0.5rem !important;
     line-height:1.2rem !important;
@@ -1106,10 +1090,10 @@ h1 {
     text-align: center;
     padding: 0 0 1rem 0 ;
     background-color: #ffffff; /* Fondo blanco */
-    width: 80% !important;
+    width: 90% !important;
     margin: 0 auto; /* Centra el contenedor */
     z-index: 501;
-    margin-top:4rem !important;
+    margin-top:6rem !important;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -1127,20 +1111,11 @@ h1 {
   }
 
   .banner-mini {
-    position: relative;
+   
     width: 90%;
     margin:0 auto;
-    margin-top: 3rem;
-    height: 480px !important; /* Evita desbordamientos */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    background-color: #ffffff;
-    box-shadow: 0px 2px 10px 1px rgba(161,155,161,1);
-    box-sizing: border-box; 
-    padding: 1rem;
-    z-index: auto !important;
+    z-index: 0 !important;
+   
   }
 
   .container3 {
@@ -1210,6 +1185,7 @@ h1 {
   .step {
     flex-direction: row !important;
     align-items: flex-start;
+   
   }
 
   .step .number {
@@ -1468,11 +1444,9 @@ justify-content: center;
   display: none; /* Posiciona la imagen en relación al contenedor padre */
  
 }
-.redondeado{
- 
-  margin-top: 7rem !important;
 
-
+.redondeado {
+  margin-top:0rem; /* mínimo 80px, máximo 120px según ancho de pantalla */
 }
 
 .dropdown-menu li a {
@@ -1572,7 +1546,7 @@ justify-content: center;
   .slide-content-mini p{
     padding: 0 !important;
    margin: 0 0.5rem !important;
-   font-size: small !important;
+   font-size: 1rem !important;
   }
 
   .slide-content-mini h4{
@@ -1747,7 +1721,60 @@ transform-origin: top;
    box-shadow: 0px 2px 10px 1px rgba(161,155,161,1);
  
 }
+
+.banner-areas {
+ 
+  flex-direction: column !important;
+  height: auto !important;
+  overflow: visible !important;
+
+}
+
+.slide-content-areas {
+  display: flex;
+  flex-direction: column !important;
+ 
+}
+
+.banner-img-areas {
+  position: relative;
+    object-fit:cover;
+   z-index: 997;
+}
+
+.shadow-estudio-areas {
+  position: relative;
+   background-color: rgba(25, 30, 50); /* Fondo con transparencia */
+  color: #ffffff;
+  z-index: 996;
+  display: flex;
+  flex-direction: column;
+   text-align: center !important;
+  padding: 1rem !important;
+  gap:1rem;
+}
+
+.shadow-estudio-areas h1 {
+ margin:auto !important;
+ font-size: large !important;
+ margin-bottom: auto;
+ 
+}
+
+.shadow-estudio-areas p {
+  margin:auto !important;
+  font-size: medium !important;
+ 
+}
+
+
+.button4 {
+   font-size: 1.2rem !important;
+   margin:auto !important;
+ 
+  }
 /* Acá */
+
 }
 
 @media (max-width: 890) {
@@ -2411,6 +2438,64 @@ font-size: x-large;
 .ancho65{
   width:90% !important;
 }
+
+
+.banner-areas {
+  display: flex;
+  flex-direction: column !important;
+  top: 80px;
+  position: relative;
+  width: 100%;
+  /* height: 40vh; */ /* Elimina esta línea */
+  height: auto; /* La altura se ajustará al contenido */
+ 
+  background-color: #b2b2b2;
+  z-index: 500;
+}
+
+.slide-content-areas {
+  display: flex;
+  flex-direction: column !important;
+ 
+}
+
+.banner-img-areas {
+  position: relative;
+    object-fit:cover;
+   z-index: 997;
+}
+
+.shadow-estudio-areas {
+  position: relative;
+   background-color: rgba(25, 30, 50); /* Fondo con transparencia */
+  color: #ffffff;
+  z-index: 996;
+  display: flex;
+  flex-direction: column;
+   text-align: center !important;
+  padding: 1rem !important;
+  gap:1rem;
+}
+
+.shadow-estudio-areas h1 {
+ margin:auto !important;
+ font-size: large !important;
+ margin-bottom: auto;
+ 
+}
+
+.shadow-estudio-areas p {
+  margin:auto !important;
+  font-size: medium !important;
+ 
+}
+
+
+.button4 {
+   font-size: 1.2rem !important;
+   margin:auto !important;
+ 
+  }
 /* Acá */
 }
 
@@ -2477,7 +2562,7 @@ font-size: x-large;
 .step {
   display: flex;
   align-items: flex-start; /* Alinea los elementos al inicio (parte superior) */
-  gap: 1rem; /* Espaciado entre el número y el contenido */
+  gap: 0.5rem; /* Espaciado entre el número y el contenido */
 }
 
 /* Números */
@@ -3342,16 +3427,21 @@ display:none;
     margin-bottom: 0px !important;
   
   }
+
+  .bloque-c p {
+   width: 90%;
+   
+   }
   
    .bloque-d .number{
-    padding: 1.5rem;
+    padding: 0rem 1.5rem ;
    
    }
   
   .bloque-d {
     flex: 1;
     flex-basis: 28%; /* Ocupa aproximadamente la mitad del ancho disponible */
-   gap:0px;
+   gap:1rem;
   
    
   }
@@ -3459,10 +3549,11 @@ display:none;
 .areasbox1_1 h2{
  width: 100% !important;
 }
+
 .areastext1_1{
   
  
-  width:100% !important;
+  width:90% !important;
  
 }
 
@@ -3496,8 +3587,8 @@ display:none;
 }
 
 .resumen-img{
-  width:300px !important;
-  margin: auto;
+  width:100% !important;
+ 
   
 }
 
@@ -3915,11 +4006,14 @@ transition: all 1s;
 
 
 .banner-areas {
+  display: flex;
+  flex-direction: row;
   top: 80px;
   position: relative;
   width: 100%;
-  height:40vh; /* Asegurar que ocupe la pantalla completa */
-  overflow: hidden; /* Evita desbordamientos */
+  /* height: 40vh; */ /* Elimina esta línea */
+  height: auto; /* La altura se ajustará al contenido */
+  
   background-color: #b2b2b2;
   z-index: 500;
 }
@@ -3938,28 +4032,23 @@ transition: all 1s;
 }
 
 .slide-content-areas {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 45vh !important;
   position: relative;
 }
 
 .banner-img-areas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 45vw; /* Ocupar el ancho completo */
-  height: 45vh; /* Ocupar el alto completo */
+  position: relative;
+  
   object-fit:cover;
    z-index: 997;
 }
 
 .shadow-estudio-areas {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 55vw; /* Asegurar que el fondo cubra todo el ancho */
-  height:100vh; /* Asegurar que cubra todo el alto */
-  background-color: rgba(25, 30, 50); /* Fondo con transparencia */
+  position: relative;
+   background-color: rgba(25, 30, 50); /* Fondo con transparencia */
   color: #ffffff;
   z-index: 996;
   display: flex;
@@ -3967,17 +4056,21 @@ transition: all 1s;
   justify-content: flex-start;
   align-items: flex-start;
   text-align: left;
-  padding: 1.5rem;
+  padding: 0;
+ 
 }
 
 .shadow-estudio-areas h1 {
-  margin-left: 8rem !important;
-  margin-top: 5%;
+  margin-left: 5rem ;
+  margin-right:10rem;
+  margin-top: 1.5rem;
   font-size: 1.8rem;
 }
 
 .shadow-estudio-areas p {
-  margin-left: 8rem !important;
+  
+  margin-left: 5rem ;
+  margin-right:10rem;
   font-size: 1.2rem;
 }
 
@@ -3997,7 +4090,7 @@ transition: all 1s;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left:8rem;
+  margin-left:5rem;
   
 }
 
@@ -4287,7 +4380,7 @@ justify-content: center;
   color:black;
   width:60%;
   margin:2rem;
- 
+ text-align: left;
  
 }
 

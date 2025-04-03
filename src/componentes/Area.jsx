@@ -10,12 +10,14 @@ const Area = ({ setMostrarContacto, mostrarContacto }) => {
   return (
     <>
        <BannerAreas  setMostrarContacto={setMostrarContacto} mostrarContacto={mostrarContacto}/> 
-       
+      <div style={{height:"6vh"}}></div>
        <BannerMiniArea/>
+       
        <Areas1/>
        <Areas2/>
        <AgendaAreas  setMostrarContacto={setMostrarContacto} mostrarContacto={mostrarContacto}/>
        <Areas4/>
+      
     </>
  
   )
