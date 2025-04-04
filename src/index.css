@@ -1474,10 +1474,6 @@ justify-content: center;
 }
 
 
-.redondeado {
-  margin-top:24% !important; /* mínimo 80px, máximo 120px según ancho de pantalla */
-}
-
 .dropdown-menu li a {
  
   color: #fff;
@@ -1823,6 +1819,13 @@ transform-origin: top;
  
 }
 /* Acá */
+
+.redondeado{
+ 
+  margin-top:8rem !important;
+
+
+}
 }
 
 @media (max-width: 890) {
@@ -2546,6 +2549,7 @@ font-size: x-large;
     margin-top:4.1rem !important;
    
   }
+
 /* Acá */
 }
 
