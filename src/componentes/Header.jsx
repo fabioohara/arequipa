@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import logo from "../assets/logosa.png";
-import Contacto from "./Contacto";
 import { useNavigate,Link  } from "react-router-dom";
+import Whastapp from "./Whatsapp";
 
 const Header = ({ setMostrarContacto, mostrarContacto }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +27,7 @@ const Header = ({ setMostrarContacto, mostrarContacto }) => {
  
   return (
     <>
-    <Contacto visible={mostrarContacto} onClose={() => setMostrarContacto(false)}/>
+    <Whastapp visible={mostrarContacto} onClose={() => setMostrarContacto(false)}/>
     <div className="header">
     <Link to="/" onClick={() => setIsOpen(false)}>
       <img src={logo} alt="Logo"  className="logo" />

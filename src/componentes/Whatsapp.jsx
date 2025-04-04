@@ -40,7 +40,7 @@ const Whastapp = ({ visible, onClose }) => {
     const mensaje = `Hola, mi nombre es *${nombre}*. Mi número es *${celular}*, mi correo es *${correo}*. 
   Escribo desde *${ciudad}, ${departamento}*.`;
   
-    const url = `https://wa.me/51905452024?text=${encodeURIComponent(mensaje)}`;
+    const url = `https://wa.me/51992077639?text=${encodeURIComponent(mensaje)}`;
     window.open(url, '_blank');
   };
 

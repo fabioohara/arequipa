@@ -5,8 +5,8 @@ import mapa2 from '../assets/mapa2.png'
 
 const Map = () => {
 
-    const destinoLat = -12.127110;  // Latitud destino
-    const destinoLng =  -77.0240204;  // Longitud destino
+    const destinoLat = -16.3923586;  // Latitud destino
+    const destinoLng =  -71.5412683;  // Longitud destino
     
     const handleOpenMaps = () => {
       window.open(`https://www.google.com/maps/dir/?api=1&destination=${destinoLat},${destinoLng}&travelmode=driving`, '_blank');
