@@ -4323,13 +4323,36 @@ justify-content: center;
   
   border-radius: 20px 0 0 20px;
   padding:1rem;
-  font-size:1rem;
+  font-size:1.2rem;
   color:black;
-  width:60%;
+  width:80%;
   margin:2rem;
-  line-height: 2rem;
+  line-height:1.4rem;
  
 }
+
+.areastext4_1 li{
+  margin:1rem 0rem;
+ 
+}ul.areastext4_1 {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.areastext4_1 li {
+  position: relative;
+  padding-left: 1.5em;
+}
+
+ul.areastext4_1 li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: red;
+ font-size: 1.5rem;
+ 
+}
+
 
 .abogado {
   display: flex;
