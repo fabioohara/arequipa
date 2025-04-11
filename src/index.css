@@ -5052,3 +5052,22 @@ border-radius: 10px;
   
 }
 
+.redes-sociales{
+  display:flex;
+  gap:2rem;
+  align-items:center;
+  justify-content:flex-start;
+  font-size:1.5rem;
+  margin-top:1rem;
+}
+
+.redes{
+ color:#fff !important;
+ font-size: larger;
+transition: all 1s;
+}
+
+.redes:hover{
+  color:#f00 !important;
+ 
+ }

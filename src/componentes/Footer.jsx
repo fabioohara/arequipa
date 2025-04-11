@@ -18,9 +18,28 @@ const Footer = () => {
   </ul>
 
   <ul className="menuFooter" >
-    <li><i className="fa fa-phone"></i>&nbsp; +51 992 077 639</li>
-    <li><i className="fa fa-facebook"></i>&nbsp; Senisse, Álvarez Garcia Abogados</li>
+    <li><a href="tel:+51992077639"><i className="fa fa-phone"></i>&nbsp; +51 992 077 639</a></li>
     <li><i className="fa fa-map-marker"></i>&nbsp; Av. Ejército 101 Of. 506 - Arequipa</li>
+
+   
+    <div className="redes-sociales" >
+   
+    <li><a className="redes" href="https://www.facebook.com/senisseabogados/" target="_blank"
+    rel="noopener noreferrer"> <i className="fa fa-facebook"></i></a></li>
+    <li><a className="redes" href="https://www.instagram.com/senisseabogados/" target="_blank"
+    rel="noopener noreferrer"><i className="fa fa-instagram"></i></a></li>
+    <li><a className="redes" href="https://www.tiktok.com/@senisseabogados" target="_blank"
+    rel="noopener noreferrer"><i className="fa-brands fa-tiktok"></i></a></li>
+    <li><a className="redes"  href="https://www.youtube.com/@SenisseAbogados" target="_blank"
+    rel="noopener noreferrer"><i className="fa fa-youtube-play"></i></a></li>
+    <li><a className="redes" href="https://www.linkedin.com/company/senisseabogados/" target="_blank"
+    rel="noopener noreferrer"><i className="fa fa-linkedin-square"></i></a></li>
+    </div>
+  
+
+    
+    
+    
    
   </ul>
 
