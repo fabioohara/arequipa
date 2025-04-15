@@ -18,7 +18,7 @@ const Footer = () => {
   </ul>
 
   <ul className="menuFooter" >
-    <li><a href="tel:+51992077639"><i className="fa fa-phone"></i>&nbsp; +51 992 077 639</a></li>
+    <li><a href="tel:+51992077639"><i className="fa fa-phone"></i>&nbsp; +51 922 973 366</a></li>
     <li><i className="fa fa-map-marker"></i>&nbsp; Av. Ejército 101 Of. 506 - Arequipa</li>
 
    
